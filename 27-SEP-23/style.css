@@ -1,0 +1,37 @@
+*{ 
+       box-sizing:border-box;
+       margin:0px;
+       padding:0px;
+    }
+    main{
+       width:400px;
+       height:400px;
+       background-color:#ef476f;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+    }
+    section{
+       width:300px;
+       height:300px;
+       border-radius:300px;
+       border:20px #ffc43d solid;
+       background-color:#ffc43d;
+       position:relative;
+    }
+    aside{
+       width:200px;
+       height:200px;
+       border:2px solid #ef476f;
+       border-top-right-radius:400px;
+       background-color:#ef476f;
+       transform:rotate(45deg);
+       position:relative;
+       left:150px;
+       top:30px;
+    }
+    
+    
+    
+    
+    
