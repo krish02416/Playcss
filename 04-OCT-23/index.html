@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           box-sizing:border-box;
+           margin:0px;
+           padding:0px;
+        }
+        #main{
+           width:400px;
+           height:400px;
+           background-color:#ddf093;
+           position:relative;
+           /*display:flex;*/
+           /*align-items:center;*/
+           /*justify-content:center;*/
+        }
+        .square1{
+           width:250px;
+           height:250px;
+           background-color:#ce4760;
+           z-index:1;
+           border-radius:25px;
+           border:2px solid transparent;
+           position:relative;
+           left:40px;
+           top:55px;
+           animation-name:square1;
+           animation-duration:5s;
+           /*animation-delay:2s;*/
+           animation-iteration-count:infinite;
+           
+        }
+        @keyframes square1{
+           from{
+                transform:translate(60px,40px);
+           }
+        }
+        .square2{
+           width:250px;
+           height:250px;
+           border-radius:25px;
+           background-color:#ce4760;
+           z-index:2;
+           position:relative;
+           left:100px;
+           bottom:150px;
+           outline:10px solid #ddf093;
+           color:yellow;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           
+        }
+        #inner{
+           width:200px;
+           height:200px;
+           /*background-color:yellow;*/
+           display:flex;
+           justify-content:space-between;
+           animation-name:circle;
+           animation-duration:5s;
+           animation-iteration-count:infinite;
+           
+        }
+        @keyframes circle{
+           from{
+              /*background-color:red;*/
+              transform:translate(50px,50px)
+              
+           }
+           to{
+              /*background-color:yellow;*/
+              
+           }
+        }
+        .item1{
+          position:relative;
+          
+        }
+        .item2{
+          position:relative;
+          top:75px;
+        }
+        .item3{
+          position:relative;
+          top:150px;
+        }
+        
+        .circle{
+           width:50px;
+           height:50px;
+           border-radius:50px;
+           border:2px solid #ddf093;
+           background-color:#ddf093;
+           display:flex;
+        }
+        
+        </style>
+        </head>
+<body>
+    <div id=main>
+        <div class=square1></div>
+        <div class=square2>
+           <div id=inner>
+           <div class="circle item1"></div>
+           <div class="circle item2"></div>
+           <div class="circle item3"></div>
+           </div>
+        </div>
+        </div>
+     </div>
+     
+</body>
+</body>
+</html>
