@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ 
+           
+            margin:0px;
+           padding:0px;
+        }
+       
+        #m1{
+        width:400px;
+        height:400px;
+        background-color: #dbfeb8;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+           
+        }
+        main{
+           width:350px;
+           height:350px;
+           display: grid;
+           grid-template-columns:auto auto auto;
+           grid-template-rows:auto auto auto;
+        }
+        
+        
+        main div{
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           
+        }
+        
+        main>div:nth-child(4){
+           display:grid;
+           grid-column-start:1;
+           grid-column-end:4;
+        }
+        aside{
+           width:80px;
+           height:80px;
+           border:1px solid #7a918d;
+           border-radius:80px;
+           background-color:#7a918d;
+           
+        }
+        nav{
+           width:80px;
+           height:80px;
+           border-radius:80px;
+           position:relative;
+           left:18px;
+        }
+        .item3,.item7{
+           transform:rotate(180deg);
+        }
+        .item2{
+           transform:rotate(90deg);
+        }
+        .item6{
+           transform:rotate(270deg);
+        }
+        section{
+         width:40px;
+         height:40px;
+         /*border:2px solid red;*/
+         border-radius:40px;
+         position:relative;
+         left:20px;
+         top:20px;
+           
+        }
+        </style>
+</head>
+<body>
+    <div id="m1">
+        <div>
+           <main>
+              <div class=item1><aside><nav></nav></aside></div>
+              <div class=item2><aside><nav></nav></aside></div>
+              <div class=item3><aside><nav></nav></aside></div>
+              <div class=item4><aside><section></section></aside></div>
+              <div class=item5><aside><nav></nav></aside></div>
+              <div class=item6><aside><nav></nav></aside></div>
+              <div class=item7><aside><nav></nav></aside></div>
+              
+           </main>
+        </div>
+    </div>
+        
+</body>
+</html>
