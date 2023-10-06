@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+           box-sizing:border-box;
+           margin:0px;
+           padding:0px;
+        }
+        #main{
+           width:400px;
+           height:400px;
+           background-color:#7353ba;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+        }
+        #oval{
+           width:150px;
+           height:86vh;
+           border-radius:150px;
+           border:25px solid #efc3f5;
+           animation-name:oval;
+           animation-duration:2s;
+           animation-delay:2s;
+           animation-iteration-count:1;
+        }
+        @keyframes oval{
+           from{
+              transform:rotate(360deg);
+              transition-delay:2s;
+           }
+        }
+        #oval>aside:first-child{
+           width:150px;
+           height:150px;
+           border-radius:150px;
+           border:25px solid #efc3f5;
+           position:relative;
+           right:25px;
+           bottom:20px;
+           animation-name:first;
+           animation-duration:2s;
+        }
+        @keyframes first{
+           from {
+              transform:translate(200px,2px);
+           }
+        }
+        #oval>aside:last-child{
+           width:150px;
+           height:150px;
+           border-radius:150px;
+           border:25px solid #efc3f5;
+           position:relative;
+           right:25px;
+           top:20px;
+           animation-name:last;
+           animation-duration:2s;
+        }
+        @keyframes last{
+           from {
+              transform:translate(-200px,2px);
+           }
+        }
+        </style>
+        
+        
+</head>
+<body>
+    <div id="main">
+        <div id="oval">
+            <aside></aside>
+            <aside></aside>
+        </div>
+     </div>
+</body>
+</html>
